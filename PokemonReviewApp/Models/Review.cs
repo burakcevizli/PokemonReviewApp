@@ -1,4 +1,5 @@
-﻿namespace PokemonReviewApp.Models
+﻿
+namespace PokemonReviewApp.Models
 {
 	public class Review
 	{
@@ -8,5 +9,10 @@
         public int Rating { get; set; }
         public Reviewer Reviewer { get; set; }
         public Pokemon Pokemon { get; set; }
-    }
+
+		internal int Count()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
